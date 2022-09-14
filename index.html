@@ -9,24 +9,68 @@
 </head>
 <body> 
     <div id="header">
-        <a href="index.html"><h2>Home</h2></a>
-        <a href=""><h2>About</h2></a>
-        <a href=""><h2>Contact Me</h2></a>
-        <a href=""><h2>My Projects</h2></a>
+        <div class="third"><h2>SHUBHAM</h2></div>
+        <a href="#home"><h3>Home</h3></a>
+        <a href="#about"><h3>About</h3></a>
+        <a href="#skills"><h3>Skills</h3></a>
+        <a href="#contact"><h3>Contact Me</h3></a>
+        <a href="#project"><h3>My Projects</h3></a>
     </div>
    
     <section id="home">
         <div id="left"> 
-            <h1>Hi! My Name is  Shubham Pandey </h1>
-            <h1>I am a Backend Developer</h1>
-            <button><h3> Hire Me</h3></button>
+            <h2>Hello world! </h2>
+            <h1>I am Shubham Pandey </h1>
+            <h2 class="third"> String profile = "Backend Developer"; </h2>
+           <a href="#hire">
+            <button class="left-btn"><h3> Hire Me</h3></button>
+           </a> 
+            <a href="Shubham_pandey_Resume.pdf" download="Shubham_pandey_Resume">
+                <button class="left-btn"><h3> Get CV</h3></button>
+            </a>
         </div>
 
         <div id="right">
             <img src="./img/profile-2.jpeg" alt="">
+            <div>
+               <a href="https://github.com/Shub118" target="_blank"> <i class="fa-brands fa-github"> </i></a>
+               <a href="https://www.linkedin.com/in/shubham-pandey-76b952156/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i> </a>
+              
+            </div>
         </div>
     </section>
-    <div ><h1>About</h1></div>
+
+    <div class="third"><h2>About Me</h2></div>
+    <section id="about">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro quae eligendi, aperiam facere inventore nesciunt beatae aliquid, omnis maiores ea hic. Sint architecto natus, soluta obcaecati nihil nisi distinctio. </h3>
+    </section>
+
+    <div class="third"><h2>Skills</h2></div>
+    <section id="skills">
+        <div>
+            <i class="fa-brands fa-java"></i>
+        </div>
+        <div>
+            <i class="fa-brands fa-js"></i>
+        </div>
+        <div>
+            <i class="fa-brands fa-html5"></i>
+        </div>
+        <div>
+            <i class="fa-brands fa-css3"></i>
+        </div> 
+    </section>
+
+    <div class="third"><h2>Contact</h2></div>
+    <section id="contact">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro quae eligendi, aperiam facere inventore nesciunt beatae aliquid, omnis maiores ea hic. Sint architecto natus, soluta obcaecati nihil nisi distinctio. </h3>
+    </section>
+
+    <div class="third"><h2>projects</h2></div>
+    <section id="project">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro quae eligendi, aperiam facere inventore nesciunt beatae aliquid, omnis maiores ea hic. Sint architecto natus, soluta obcaecati nihil nisi distinctio. </h3>
+    </section>
+
     <section id="bottom">
         <div><h2>200+</h2>
             <p>problems</p>
@@ -47,7 +91,16 @@
             <p>Assignments</p>
         </div>
     </section>
+
+    <section id="hire">
+        <h2>Want to hire me?</h2>
+        <form action="">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+        </form>
+    </section>
    
 </body>
+<script src="https://kit.fontawesome.com/65a0ff1514.js" crossorigin="anonymous"></script>
 <script src="portfolio.js"></script>
 </html>
