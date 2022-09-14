@@ -120,12 +120,82 @@ a>h3:hover{
 
 
 @media  screen and ( max-width: 760px){
-   
+    h1{
+        font-size: 20px;
+    }
+    .third{
+        font-size: 15px;
+    }
+    #header>a{
+        display: none;
+
+    }
+    #home{
+        display: block;
+    }
+    #home>div{
+        width: 80%;
+        text-align: center;
+    }
+    #right>img{
+        border-radius: 50%;
+        width: 60%;
+    }
+    .left-btn{
+        margin: 5%;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #bottom{
+        display: grid;
+        grid-template: 100px 1fr / 100px 1fr;
+        gap: 15%;
+        margin-bottom: 5%;
+    }
+    #bottom>div{
+        margin: auto;
+        padding: 1%;
+    }
 }
 
 @media  screen and ( max-width: 480px){
-    #header{
+    #header>a{
         display: none;
     }
-    
+    h1{
+        font-size: 15px;
+    }
+    .third{
+        font-size: 10px;
+    }
+    #home{
+        display: block;
+    }
+    #home>div{
+        width: 80%;
+        text-align: center;
+    }
+    #right>img{
+        border-radius: 50%;
+        width: 60%;
+    }
+    .left-btn{
+        margin: 5%;
+        font-size: 8px;
+        font-weight: 300;
+    }
+    #bottom{
+        display: block;
+        margin-bottom: 15%;
+    }
+    #bottom>div{
+        margin: auto;
+        margin-top: 5%;
+        padding: 1%;
+        line-height: 1rem;
+      
+    }
+    #bottom>div>h2{
+        font-size: 18px;
+    }
 }

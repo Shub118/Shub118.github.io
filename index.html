@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="portfolio.css">
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link
+rel="stylesheet"
+href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
 </head>
 <body> 
     <div id="header">
@@ -42,10 +47,15 @@
 
     <div class="third"><h2>About Me</h2></div>
     <section id="about">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro quae eligendi, aperiam facere inventore nesciunt beatae aliquid, omnis maiores ea hic. Sint architecto natus, soluta obcaecati nihil nisi distinctio. </h3>
+        <h3>I am a Java Backend Developer. with great problem solving attitude<br>
+            I have done my web development course from masai Where I followed a 9-9-6 schedule and work on my overall skill development <br>
+            I have done multiple projects and Assignments looking for a progressive organization <br>
+            where I can get a backend developer role to utilize my skills to 
+            contribute to Organization's growth and enhance my skillset. <br>
+             </h3>
     </section>
 
-    <div class="third"><h2>Skills</h2></div>
+    <div class="third"><h2>Tech Stack</h2></div>
     <section id="skills">
         <div>
             <i class="fa-brands fa-java"></i>
@@ -63,12 +73,12 @@
 
     <div class="third"><h2>Contact</h2></div>
     <section id="contact">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro quae eligendi, aperiam facere inventore nesciunt beatae aliquid, omnis maiores ea hic. Sint architecto natus, soluta obcaecati nihil nisi distinctio. </h3>
+        
     </section>
 
     <div class="third"><h2>projects</h2></div>
     <section id="project">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro quae eligendi, aperiam facere inventore nesciunt beatae aliquid, omnis maiores ea hic. Sint architecto natus, soluta obcaecati nihil nisi distinctio. </h3>
+        
     </section>
 
     <section id="bottom">
@@ -92,6 +102,17 @@
         </div>
     </section>
 
+
+
+
+
+<!-- Prepare a container for your calendar. -->
+<div class="calendar">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+</div>
+
+
     <section id="hire">
         <h2>Want to hire me?</h2>
         <form action="">
@@ -103,4 +124,13 @@
 </body>
 <script src="https://kit.fontawesome.com/65a0ff1514.js" crossorigin="anonymous"></script>
 <script src="portfolio.js"></script>
+<script>
+    GitHubCalendar(".calendar", "Shub118");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "Shub118", { responsive: true });
+</script>
+<!-- Include the library. -->
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+></script>
 </html>
