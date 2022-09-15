@@ -246,7 +246,10 @@ a>h3:hover{
         width: 30px;
     }
     #contact>div>img{
-        width: 50px;
+        width: 30px;
+    }
+    #contact{
+        display: block;
     }
     #bottom{
         display: block;
