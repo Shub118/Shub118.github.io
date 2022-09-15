@@ -105,6 +105,9 @@ a>h3:hover{
     justify-content: center;
     gap: 20%;
     text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
 }
 #contact>div>img{
     width: 60px;
