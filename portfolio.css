@@ -115,6 +115,21 @@ a>h3:hover{
 
 #project{
     margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 50px;
+}
+#project>i{
+    cursor: pointer;
+}
+#project>div{
+    width: 70%;
+    margin: auto;
+}
+#project>div>img{
+    width: 80%;
+    height: 300px;
 }
 #bottom{
     display: flex;
@@ -191,6 +206,12 @@ a>h3:hover{
     #project{
         margin: auto;
         width: 80%;
+    }
+    #project>i{
+        cursor: pointer;
+    }
+    #project>div{
+        width: 60%;
     }
     #bottom{
         margin: auto;
