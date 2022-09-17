@@ -287,12 +287,13 @@ a>h3:hover{
         cursor: pointer;
         font-size: 20px;
     }
-    #project>div>img{
+    #project>div>a>img{
         height: 100px;
     }
-    #project>div{
+    #project>div>h2{
         width: 90%;
         font-size: 10px;
+        margin-bottom: 15%;
     }
     #bottom{
         display: block;
