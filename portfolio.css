@@ -290,7 +290,10 @@ a>h3:hover{
     #project>div>img{
         height: 100px;
     }
-
+    #project>div{
+        width: 90%;
+        font-size: 10px;
+    }
     #bottom{
         display: block;
         margin-bottom: 15%;
