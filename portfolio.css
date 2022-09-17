@@ -154,7 +154,23 @@ a>h3:hover{
 #bottom>div>h2{
     margin-top: 20%;
 }
-
+#btn:hover{
+    background-color:  black;
+    color: rgb(250, 213, 223);
+    border-radius: 5px;
+}
+#btn{
+    border-radius: 5px;
+    border: none;
+    margin: 2%;
+    width: 10%;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color:  rgb(250, 213, 223);
+    color: balck;
+    padding: 1%;
+}
 
 /* ////////////////////////////////////////////////////////////////  TABLETS */
 
@@ -211,7 +227,7 @@ a>h3:hover{
         width: 80%;
         height: 400px;
     }
-    #project>div>img{
+    #project>div>a>img{
         height: 250px;
     }
     #project>i{
@@ -269,6 +285,16 @@ a>h3:hover{
         margin: auto;
         width: 80%;
     }
+    #skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15%;
+    }
+    #skills>div{
+
+    }
     #skills>div>img{
         width: 30px;
     }
@@ -288,12 +314,10 @@ a>h3:hover{
         font-size: 20px;
     }
     #project>div>a>img{
-        height: 100px;
+        height: 150px;
     }
     #project>div>h2{
-        width: 90%;
         font-size: 10px;
-        margin-bottom: 15%;
     }
     #bottom{
         display: block;
