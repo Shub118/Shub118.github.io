@@ -22,11 +22,10 @@ right.addEventListener("click",() => {
     } 
 });
 
-
+let x  = 0;
 setInterval(() =>  {
-    if(i >= arr.length-1) i = -1;
+    if(x >= arr.length-1) x = -1;
 
-    image.src = arr[++i];
-    link.setAttribute( "href", links[++i]);
-    
+    image.src = arr[++x];
+    link.setAttribute( "href", links[++x]);
 },4000);
