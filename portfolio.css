@@ -1,39 +1,49 @@
 *{
-    margin: 5px;
+    margin: 0px;
     padding: 0px;
    font-family: Arial, Helvetica, sans-serif;
-   text-align: center;
+   
+}
+body{
+    background-image: url("https://www.teahub.io/photos/full/225-2250934_yellow-ombre-background.jpg");
+    text-align: center;
 }
 .third{
     color: rgb(240,150,25);
     font-size: 25px;
     text-align: center;
+    margin-bottom: 3%;
+    background-color: black;
 }
 h1{
     font-size: 30px;
 }
-
+#header>h2{
+    color: rgb(240,150,25);
+    font-size: 25px;
+}
 #header{
     display: flex;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
     margin: auto;
     margin-bottom: 5%;
-    margin-top: 1%;
+    position: sticky;
+    top: 0%;
+    background-color: rgb(250, 213, 223);
 }
 a{
     color: black;
     text-decoration: none;
-    border-radius: 10px;
 }
 a>h3{
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 0.2em;
+    border-bottom: 2px solid white;
 }
 a>h3:hover{
-    color: rgb(250, 213, 223);
-    background-color: black;
-    border-radius: 10px;
+    border-bottom: 2px solid black;
     padding: 0.2em;
 }
 #home{
@@ -58,8 +68,14 @@ a>h3:hover{
     justify-content: space-around;
     align-items: center;
 }
-.fa-brands{
+.fa-brands:hover,.fa-sharp:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:10%;
+    transform: scale(1.2);
+}
+.fa-brands,.fa-sharp{
     font-size: 50px;
+    margin: 2%;
 }
 .left-btn:hover{
     background-color:  black;
@@ -80,7 +96,8 @@ a>h3:hover{
 }
 
 #about{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    text-align: left;
 }
 
 #skills{
@@ -92,10 +109,18 @@ a>h3:hover{
     margin-bottom: 5%;
 
 }
+#skills>div:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 #skills>div{
     width: 80%;
     margin: auto;
     margin-top: 2%;
+    background-color: white;
+    padding: 1%;
+    border-radius: 8%;
 }
 #skills>div>img{
     width: 60px;
@@ -109,6 +134,16 @@ a>h3:hover{
     width: 80%;
     margin: auto;
     margin-bottom: 5%;
+}
+#contact>div:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#contact>div{
+    background-color: white;
+    padding: 1%;
+    border-radius: 8%;
 }
 #contact>div>img{
     width: 60px;
@@ -126,7 +161,7 @@ a>h3:hover{
     font-size: 50px;
 }
 #project>div{
-    width: 85%;
+    width: 80%;
     margin: auto;
     color: gray;
 }
@@ -163,7 +198,7 @@ a>h3:hover{
     border-radius: 5px;
     border: none;
     margin: 2%;
-    width: 10%;
+    width: 8%;
     font-size: 20px;
     cursor: pointer;
     font-weight: 500;
@@ -171,7 +206,14 @@ a>h3:hover{
     color: balck;
     padding: 1%;
 }
-
+input,textarea{ 
+    display: block;
+    margin: 1%;
+}
+#hire{
+    text-align: left;
+    background-color: rgb(240,150,25);
+}
 /* ////////////////////////////////////////////////////////////////  TABLETS */
 
 @media  screen and ( max-width: 760px){
@@ -248,6 +290,12 @@ a>h3:hover{
         margin: auto;
         padding: 1%;
     }
+    #btn{
+        margin: 5%;
+        font-size: 15px;
+        font-weight: 300;
+        width: 20%;
+    }
 }
 
 
@@ -291,9 +339,6 @@ a>h3:hover{
         width: 90%;
         margin: auto;
         margin-bottom: 15%;
-    }
-    #skills>div{
-
     }
     #skills>div>img{
         width: 30px;
