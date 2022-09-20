@@ -94,12 +94,10 @@
     <section id="project">
         <i class="fa-solid fa-arrow-left"></i>
         <div >
-           <a href="" target="_blank">
-            <img src="img/bella vita.png" alt="" >
-           </a>
-           
-           <a href="https://github.com/Shub118" target="_blank"> <i class="fa-sharp fa-solid fa-link"></i></i></a>
-           <a href="https://github.com/Shub118" target="_blank"> <i class="fa-brands fa-github"> </i></a>
+            <div><img src="img/bella vita.png" alt="" ></div>
+            
+           <a href="https://enchanting-bubblegum-e67cc4.netlify.app/index.html" target="_blank" id="prl"> <i class="fa-sharp fa-solid fa-link"></i></i></a>
+           <a href="https://github.com/sujeetcoder/bellavitaproject1" target="_blank" id="prg"> <i class="fa-brands fa-github"> </i></a>
         </div>
         <i class="fa-solid fa-arrow-right"></i>
     </section>
@@ -137,11 +135,16 @@
 
     <section id="hire">
         <h2 >Want to hire me?</h2>
-       
-            <input type="text" placeholder="Your Name"> 
-            <input type="email" placeholder="Your Email ID"><br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-            <input type="submit" value="Send" id="btn">
+        
+            <form>
+                
+            <input type="text" placeholder="Your Name" name="user_name"> 
+            <input type="email" placeholder="Your Email ID" id="user_email"><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message" id="message"></textarea>
+            <input type="button"  onclick="sendEmail()" value="Send Email" id="btn"/>
+            </form> 
+        
+           
         
     </section>
    
@@ -150,4 +153,5 @@
 </body>
 <script src="https://kit.fontawesome.com/65a0ff1514.js" crossorigin="anonymous"></script>
 <script src="portfolio.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>  
 </html>
