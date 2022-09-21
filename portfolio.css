@@ -151,28 +151,7 @@ a>h3:hover{
     width: 60px;
 }
 
-#project{
-    width: 90%;
-    margin: auto;
-    margin-bottom: 5%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 5%;
-    align-items: center;
-}
-#project>i{
-    cursor: pointer;
-    font-size: 50px;
-}
-#project>div{
-    width: 80%;
-    margin: auto;
-    color: gray;
-}
-#project>div>div>img{
-    width: 100%;
-    height: 400px;
-}
+
 #bottom{
     display: flex;
     justify-content: center;
@@ -224,6 +203,54 @@ input,textarea{
     margin: auto;
     margin-top: 1%;
 }
+/* ///////////////////////////////////////////////////// project ///////////////////////////////////////*/
+.image.fit{
+    /* block capabilities, but still next to each other */  
+    display: inline-block;
+    /* be the parent for position absolute later */
+    position: relative;
+    width: 45%;
+    margin: 2%;
+  }
+  
+  .image.fit .normal, .image.fit .hover {
+    /* position of the box */
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+  
+    /* nice box with padding even for multiline */
+    background-color: rgba(227, 186, 22,0.8);
+    padding: 5%;
+    text-align: center;
+    font-family: Arial;
+    color: #333;
+  
+    /* animate fade, rather than blinking */
+    transition: opacity 0.5s;
+  }
+  
+  .image.fit .normal {
+    opacity: 1.2; /* visible by default */
+  }
+  .image.fit:hover .normal {
+    opacity: 0; /* not visible on hover */
+  }
+  
+  .image.fit .hover {
+    opacity: 0; /* not visible by default */
+  
+    /* optional position on top (remove, for the same place) */
+    top: 5%;   
+    bottom: auto;
+  }
+  .image.fit:hover .hover {
+    opacity: 1.5; /* visible on hover */
+  }
+  .fa{
+    width: 20%;
+  }
 
 /* ////////////////////////////////////////////////////////////////  TABLETS */
 
@@ -275,18 +302,15 @@ input,textarea{
     #contact>div>img{
         width: 40px;
     }
-    #project{
-        margin: auto;
-        width: 80%;
-        height: 400px;
-    }
-    #project>div>div>img{
-        height: 250px;
-    }
-    #project>i{
-        cursor: pointer;
-        font-size: 30px;
-    }
+   /* projects  */
+   .image.fit{
+    /* block capabilities, but still next to each other */  
+    display: inline-block;
+    /* be the parent for position absolute later */
+    position: relative;
+    width: 55%;
+    margin: 2%;
+  }
    
     #bottom{
         margin: auto;
