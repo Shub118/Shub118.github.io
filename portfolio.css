@@ -254,6 +254,7 @@ input,textarea{
     /* optional position on top (remove, for the same place) */
     top: 5%;   
     bottom: auto;
+    transition: 1s;
   }
   .image.fit:hover .hover {
     opacity: 1.5; /* visible on hover */
