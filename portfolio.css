@@ -32,6 +32,7 @@ h1{
     margin-bottom: 5%;
     position: sticky;
     top: 0%;
+    z-index: 2;
     background-color: rgb(250, 213, 223);
 }
 a{
@@ -106,6 +107,8 @@ a>h3:hover{
 #about{
     margin-bottom: 3%;
     text-align: left;
+    width: 80%;
+    padding: 5%;
 }
 
 #skills{
@@ -214,12 +217,17 @@ input,textarea{
     margin-top: 1%;
 }
 /* ///////////////////////////////////////////////////// project ///////////////////////////////////////*/
+
+#project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .image.fit{
     /* block capabilities, but still next to each other */  
     display: inline-block;
     /* be the parent for position absolute later */
     position: relative;
-    width: 45%;
+    width: 80%;
     margin: 2%;
   }
   
@@ -259,13 +267,24 @@ input,textarea{
   .image.fit:hover .hover {
     opacity: 1.5; /* visible on hover */
   }
+  .fa:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius:10%;
+    transform: scale(1.2);
+    background-color: white;
+}
   .fa{
-    width: 20%;
+    font-size: 40px;
+    transition:  transform 0.7s;
   }
 
-  #git>img{
-    height: 139px;
-}
+ #git>img{
+    height: 140px;
+    transition:  transform 0.5s;
+ }
+ #git>img:hover{
+    transform: scale(1.2);
+ }
 
 /* ////////////////////////////////////////////////////////////////  TABLETS */
 
