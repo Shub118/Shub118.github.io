@@ -221,6 +221,13 @@ input,textarea{
 #project{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 3%;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+#project>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .image.fit{
     /* block capabilities, but still next to each other */  
@@ -341,16 +348,11 @@ input,textarea{
     }
     #contact>div>img{
         width: 40px;
-    }
-   /* projects  */
-   .image.fit{
-    /* block capabilities, but still next to each other */  
-    display: inline-block;
-    /* be the parent for position absolute later */
-    position: relative;
-    width: 55%;
-    margin: 2%;
-  }
+     }
+     
+     .fa{
+        font-size: 30px;
+      }
    
     #bottom{
         width: 80%;
@@ -456,4 +458,10 @@ input,textarea{
     #git>img{
         width: 90%;
     }
+    #project{
+        display: block;
+    }
+    .fa{
+        font-size: 20px;
+         }
 }
