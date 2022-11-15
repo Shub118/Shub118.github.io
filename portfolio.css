@@ -4,6 +4,9 @@
    font-family: Arial, Helvetica, sans-serif;
    
 }
+b{
+    margin-top: 5%;
+}
 body{
     background-image: url("https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000");
     background-size:cover;
@@ -164,10 +167,9 @@ a>h3:hover{
     transition:  transform 0.7s;
 }
 #contact{
-    margin-bottom: 5%;
     display: flex;
     justify-content: center;
-    gap: 20%;
+    gap: 10%;
     text-align: center;
     width: 80%;
     margin: auto;
@@ -180,12 +182,12 @@ a>h3:hover{
 }
 #contact>div{
     /* background-color: white; */
-    padding: 1%;
+    padding: 3px;
     border-radius: 8%;
     transition:  transform 0.7s;
 }
 #contact>div>img{
-    width: 60px;
+    width: 45px;
 }
 
 
@@ -512,9 +514,18 @@ a>h3:hover{
         margin: auto;
         width: 80%;
     }
-    #skills,#tools{
+    #skills{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        width: 95%;
+        margin: auto;
+        margin-bottom: 15%;
+    }
+    #skills>div{
+        margin: auto;
+    }
+    #tools{
+        
         width: 95%;
         margin: auto;
         margin-bottom: 15%;
