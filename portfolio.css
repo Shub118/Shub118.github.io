@@ -17,7 +17,7 @@ body{
     margin-bottom: 3%;
 }
 h1{
-    font-size: 30px;
+    font-size: 50px;
 }
 #header>h2{
     color: rgb(227, 186, 22);
@@ -59,7 +59,7 @@ a>h3:hover{
 }
 #home>div{
     width: 45%;
-    text-align: center;
+    
 }
 #right>img{
     border-radius: 50%;
@@ -84,23 +84,35 @@ a>h3:hover{
     margin: 2%;
     transition:  transform 0.7s;
 }
-.left-btn:hover{
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+#left>.third{
+    font-size: 40px;
+}
+
+#left-btn:hover{
     background-color:  black;
     color: rgb(250, 213, 223);
-    border-radius: 5px;
+    border-radius: 2px;
     
 }
-.left-btn{
+
+#left-btn{
     border-radius: 5px;
     border: none;
-    margin: 10%;
-    width: 20%;
-    font-size: 20px;
+    /* margin: 10%; */
+    width: 100%;
+    font-size: 18px;
     cursor: pointer;
     font-weight: 500;
     background-color:  rgb(250, 213, 223);
     color: balck;
-    padding: 1%;
+    padding: 5%;
     transition:  0.7s;
 }
 
@@ -113,8 +125,7 @@ a>h3:hover{
 
 #skills{
     display: flex;
-    justify-content: center;
-    gap: 20%;
+    justify-content: space-around; 
     width: 80%;
     margin: auto;
     margin-bottom: 5%;
@@ -126,16 +137,19 @@ a>h3:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #skills>div{
-    width: 80%;
+    /* width: 80%; */
+    height: 100px;
     margin: auto;
     margin-top: 2%;
     background-color: white;
     padding: 1%;
     border-radius: 8%;
     transition:  transform 0.7s;
+    margin-left: 2%;
 }
 #skills>div>img{
-    width: 60px;
+    width: 80%;
+    height: 100px;
 }
 #contact{
     margin-bottom: 5%;
@@ -190,101 +204,43 @@ a>h3:hover{
 #bottom>div>h2{
     margin-top: 20%;
 }
-#btn:hover{
-    background-color:  black;
-    color: rgb(250, 213, 223);
-    border-radius: 5px;
-}
-#btn{
-    border-radius: 5px;
-    border: none;
-    width: 8%;
-    margin: auto;
-    margin-top: 2%;
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: 500;
-    background-color:  rgb(250, 213, 223);
-    color: balck;
-    padding: 1%;
-}
-input,textarea{ 
-    display: block;
-   border-radius: 10px;
-   padding: 1%;
-    width: 20%;
-    margin: auto;
-    margin-top: 1%;
-}
+
+
 /* ///////////////////////////////////////////////////// project ///////////////////////////////////////*/
 
 #project{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 3%;
-    width: 90%;
+    width: 95%;
     margin: auto;
     margin-bottom: 3%;
+   
 }
 #project>div{
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    margin-top: 3%;
+    padding: 1%;
 }
-.image.fit{
-    /* block capabilities, but still next to each other */  
-    display: inline-block;
-    /* be the parent for position absolute later */
-    position: relative;
-    width: 80%;
-    margin: 2%;
-  }
-  
-  .image.fit .normal, .image.fit .hover {
-    /* position of the box */
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
-  
-    /* nice box with padding even for multiline */
-    background-color: rgba(227, 186, 22,0.8);
-    padding: 5%;
-    text-align: center;
-    font-family: Arial;
-    color: #333;
-  
-    /* animate fade, rather than blinking */
-    transition: opacity 0.5s;
-  }
-  
-  .image.fit .normal {
-    opacity: 1.2; /* visible by default */
-  }
-  .image.fit:hover .normal {
-    opacity: 0; /* not visible on hover */
-  }
-  
-  .image.fit .hover {
-    opacity: 0; /* not visible by default */
-  
-    /* optional position on top (remove, for the same place) */
-    top: 5%;   
-    bottom: auto;
-    transition: 1s;
-  }
-  .image.fit:hover .hover {
-    opacity: 1.5; /* visible on hover */
-  }
-  .fa:hover{
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius:10%;
-    transform: scale(1.2);
-    background-color: white;
+#project>div img{
+    width: 90%;
+    height: 350px;
+    margin: 1%;
 }
-  .fa{
-    font-size: 40px;
-    transition:  transform 0.7s;
-  }
 
+#project>div>div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.prolinks{
+    display: flex;
+    gap: 50%;
+}
  #git>img{
     height: 140px;
     transition:  transform 0.5s;
@@ -292,6 +248,220 @@ input,textarea{
  #git>img:hover{
     transform: scale(1.2);
  }
+
+
+
+
+ 
+ /* --------------------------------------- */
+ /* ----- Calender ----- */
+ /* ---------------------------------------  */
+  :root {
+     --color-calendar-graph-day-bg: #696666;
+     --color-calendar-graph-day-L1-bg: #39dd34;
+     --color-calendar-graph-day-L2-bg: #45a045;
+     --color-calendar-graph-day-L3-bg: #047526;
+     --color-calendar-graph-day-L4-bg: #0a4208;
+   }
+   
+   rect.ContributionCalendar-day[data-level='0'] {
+       fill: var(--color-calendar-graph-day-bg);
+   }
+   
+   rect.ContributionCalendar-day[data-level='1'] {
+       fill: var(--color-calendar-graph-day-L1-bg);
+   }
+   
+   rect.ContributionCalendar-day[data-level='2'] {
+       fill: var(--color-calendar-graph-day-L2-bg);
+   }
+   
+   rect.ContributionCalendar-day[data-level='3'] {
+       fill: var(--color-calendar-graph-day-L3-bg);
+   }
+   
+   rect.ContributionCalendar-day[data-level='4'] {
+       fill: var(--color-calendar-graph-day-L4-bg);
+   }
+   
+   .calendar .width-full > .float-left {
+       display: none;
+   }
+   
+   .calendar {
+       font-family: Helvetica, arial;
+       border: 1px solid #DDDDDD;
+       border-radius: 10px;
+       min-height: 243px;
+       text-align: center;
+       margin: 0 auto;
+       
+   }
+   
+   .calendar-graph text.wday,
+   .calendar-graph text.month {
+       font-size: 10px;
+       fill: #aaa;
+   }
+   
+   .contrib-legend {
+       text-align: right;
+       padding: 0 14px 10px 0;
+       display: inline-block;
+       float: right;
+   }
+   
+   .contrib-legend .legend {
+       display: inline-block;
+       list-style: none;
+       margin: 0 5px;
+       position: relative;
+       bottom: -1px;
+       padding: 0;
+   }
+   
+   .contrib-legend .legend li {
+       display: inline-block;
+       width: 10px;
+       height: 10px;
+   }
+   
+   .text-small {
+       font-size: 12px;
+       color: #767676;
+   }
+   
+   .calendar-graph {
+       padding: 5px 0 0;
+       text-align: center;
+   }
+   
+   .contrib-column {
+       padding: 15px 0;
+       text-align: center;
+       border-left: 1px solid #ddd;
+       border-top: 1px solid #ddd;
+       font-size: 11px;
+   }
+   
+   .contrib-column-first {
+       border-left: 0;
+   }
+   
+   .table-column {
+       display: table-cell;
+       width: 1%;
+       padding-right: 10px;
+       padding-left: 10px;
+       vertical-align: top;
+   }
+   
+   .contrib-number {
+       font-weight: 300;
+       line-height: 1.3em;
+       font-size: 24px;
+       display: block;
+       color: rgb(16, 15, 15);
+   }
+   
+   .calendar img.spinner {
+       width: 70px;
+       margin-top: 50px;
+       min-height: 70px;
+   }
+   
+   .monospace {
+       text-align: center;
+       color: #000;
+       font-family: monospace;
+   }
+   
+   .monospace a {
+       color: #1D75AB;
+       text-decoration: none;
+   }
+   
+   .contrib-footer {
+       font-size: 11px;
+       padding: 0 10px 12px;
+       text-align: left;
+       width: 100%;
+       box-sizing: border-box;
+       height: 26px;
+   }
+   
+   .left.text-muted {
+       float: left;
+       margin-left: 9px;
+       color: #767676;
+   }
+   .left.text-muted a {
+       color: #4078c0;
+       text-decoration: none;
+   }
+   .left.text-muted a:hover,
+   .monospace a:hover {
+       text-decoration: underline;
+   }
+   
+   h2.f4.text-normal.mb-3 {
+       display: none;
+   }
+   
+   .float-left.text-gray {
+       float: left;
+   }
+   #user-activity-overview{
+       display:none;
+   }
+   
+   .day-tooltip {
+       white-space: nowrap;
+       position: absolute;
+       z-index: 99999;
+       padding: 10px;
+       font-size: 12px;
+       color: #959da5;
+       text-align: center;
+       background: rgba(0,0,0,.85);
+       border-radius: 3px;
+       display: none;
+       pointer-events: none;
+   }
+   .day-tooltip strong {
+       color: #dfe2e5;
+   }
+   .day-tooltip.is-visible {
+       display: block;
+   }
+   .day-tooltip:after {
+       position: absolute;
+       bottom: -10px;
+       left: 50%;
+       width: 5px;
+       height: 5px;
+       box-sizing: border-box;
+       margin: 0 0 0 -5px;
+       content: " ";
+       border: 5px solid transparent;
+       border-top-color: rgba(0,0,0,.85)
+   }
+   
+   text.ContributionCalendar-label {
+       fill: rgb(18, 18, 18);
+       font-size: 11px;
+   }
+ 
+   .js-calendar-graph-svg{
+     margin-top: 20px;
+     width: 95%;
+   }
+ 
+
+
+
+
+
 
 /* ////////////////////////////////////////////////////////////////  TABLETS */
 
@@ -413,12 +583,14 @@ input,textarea{
     #skills{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        width: 90%;
+        width: 70%;
         margin: auto;
-        margin-bottom: 15%;
+        gap: 10px;
+       margin-bottom: 8%;
     }
-    #skills>div>img{
-        width: 30px;
+    #skills>div{
+        width: 50px;
+        height: 50px;
     }
     #contact>div>img{
         width: 30px;
@@ -437,6 +609,20 @@ input,textarea{
     }
     #project>div>div>img{
         height: 150px;
+    }
+    #project>div{
+        border-radius: 10px;
+        flex-direction: column;
+        height: auto;
+    }
+    #project>div:nth-child(2){
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    #project>div>div{
+        width: 96%;
+        font-size: small;
+        /* border: 1px solid red; */
     }
     #project>div>h2{
         font-size: 10px;
