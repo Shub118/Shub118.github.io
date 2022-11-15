@@ -470,7 +470,9 @@ a>h3:hover{
     .third{
         font-size: 20px;
     }
-   
+    #header>a>h3{
+        font-size: 10px;
+     }
     #home{
         display: block;
     }
@@ -546,11 +548,19 @@ a>h3:hover{
     .fa-brands{
         font-size: 30px;
     }
-  
+    #header>a>h3{
+       font-size: 10px;
+    }
+    #header>a:nth-child(4){
+        display: none;
+     }
     h1{
         font-size: 20px;
     }
     .third{
+        font-size: 15px;
+    }
+    #left>.third{
         font-size: 15px;
     }
     #home{
