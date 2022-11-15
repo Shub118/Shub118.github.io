@@ -121,7 +121,7 @@ a>h3:hover{
     padding: 5%;
 }
 
-#skills{
+#skills,#tools{
     display: flex;
     justify-content: space-around; 
     width: 80%;
@@ -149,6 +149,20 @@ a>h3:hover{
     width: 80%;
     height: 100px;
 }
+
+#tools>div>img{
+    width: 80%;
+    height: 100px;
+}
+
+#tools>div:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#tools>div{
+    transition:  transform 0.7s;
+}
 #contact{
     margin-bottom: 5%;
     display: flex;
@@ -165,7 +179,7 @@ a>h3:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #contact>div{
-    background-color: white;
+    /* background-color: white; */
     padding: 1%;
     border-radius: 8%;
     transition:  transform 0.7s;
@@ -288,7 +302,7 @@ a>h3:hover{
    
    .calendar {
        font-family: Helvetica, arial;
-       border: 1px solid #DDDDDD;
+       border: 1px solid #141313;
        border-radius: 10px;
        min-height: 243px;
        text-align: center;
@@ -337,8 +351,8 @@ a>h3:hover{
    .contrib-column {
        padding: 15px 0;
        text-align: center;
-       border-left: 1px solid #ddd;
-       border-top: 1px solid #ddd;
+       border-left: 1px solid rgb(30, 28, 28);
+       border-top: 1px solid rgb(31, 28, 28);
        font-size: 11px;
    }
    
@@ -498,16 +512,16 @@ a>h3:hover{
         margin: auto;
         width: 80%;
     }
-    #skills{
+    #skills,#tools{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         width: 95%;
         margin: auto;
         margin-bottom: 15%;
     }
-    #skills>div>img{
+    /* #skills>div>img{
         width: 40px;
-    }
+    } */
     #contact{
         margin: auto;
         width: 80%;
@@ -548,6 +562,9 @@ a>h3:hover{
     .fa-brands{
         font-size: 30px;
     }
+    #header>h2{
+        font-size: 15px;
+    }
     #header>a>h3{
        font-size: 10px;
     }
@@ -583,7 +600,7 @@ a>h3:hover{
         margin: auto;
         width: 80%;
     }
-    #skills{
+    #skills,#tools{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         width: 70%;
@@ -591,10 +608,12 @@ a>h3:hover{
         gap: 10px;
        margin-bottom: 8%;
     }
-    #skills>div{
+    #skills>div>img{
         width: 50px;
         height: 50px;
     }
+
+    
     #contact>div>img{
         width: 30px;
     }
@@ -611,12 +630,13 @@ a>h3:hover{
         font-size: 20px;
     }
     #project>div>div>img{
-        height: 150px;
+        height: 100px;
     }
     #project>div{
         border-radius: 10px;
         flex-direction: column;
         height: auto;
+        margin-top: 5%;
     }
     #project>div:nth-child(2){
         flex-direction: column-reverse;
