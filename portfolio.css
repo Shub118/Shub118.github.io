@@ -470,10 +470,7 @@ a>h3:hover{
     .third{
         font-size: 20px;
     }
-    #header>a{
-        display: none;
-
-    }
+   
     #home{
         display: block;
     }
@@ -549,9 +546,7 @@ a>h3:hover{
     .fa-brands{
         font-size: 30px;
     }
-    #header>a{
-        display: none;
-    }
+  
     h1{
         font-size: 20px;
     }
